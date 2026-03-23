@@ -81,18 +81,19 @@ Update paths in code:
 
 PIPER_EXE = r"C:\piper\piper.exe"
 PIPER_MODEL = r"C:\piper\voices\en_GB-alba-medium.onnx"
+
 5. Run the assistant
 python main.py
+
 ⚙️ Configuration
-
 You can tweak:
-
 Parameter	Description
 THRESHOLD	Wake word sensitivity
 COMMAND_DURATION	Recording time
 SAMPLE_RATE	Audio quality
 MAX_TURNS	Short-term memory size
 Memory limits	Long-term storage size
+
 📁 Project Structure
 friday-ai/
 │
@@ -100,6 +101,7 @@ friday-ai/
 ├── fridays_memory.json
 ├── audio/
 └── README.md
+
 🧠 How Memory Works
 Short-Term Memory
 Stored in conversation
@@ -116,6 +118,7 @@ Facts extracted from phrases like:
 “I like…”
 “My name is…”
 Dialogue history retained (capped)
+
 ⚠️ Known Limitations
 Emotion detection is keyword-based
 No multi-user support
@@ -129,17 +132,17 @@ CPU-only by default (slower on low-end systems)
 🎯 Custom wake word training
 ⚡ GPU acceleration
 🎭 Advanced emotion modelling
+
 🙌 Acknowledgements
 Ollama
 openWakeWord
 faster-whisper
 Piper TTS
-📜 License
 
+📜 License
 MIT License (recommended — update if needed)
 
 👤 Author
-
 Akif Jabir
 
 💡 Final Note
